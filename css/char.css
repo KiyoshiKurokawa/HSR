@@ -1,0 +1,464 @@
+:root {
+    --dark-theme-background-color: #2d3142;
+    --dark-theme-text-color: #eae8ff;
+    --scroll-bar-color: #E7E5E5;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-theme-background-color);
+    color: var(--dark-theme-text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.avatar h1 {
+    text-align: center;
+}
+
+.avatar img {
+    max-width: 500px;
+    height: 100%;
+}
+
+.char-details {
+    display: flex;
+    justify-content: center;
+}
+
+.char-details img {
+    width: 48px;
+    height: 100%;
+}
+
+.close {
+    display: flex;
+    flex-direction: row-reverse;
+
+    &.close button {
+        background-color: transparent;
+        border: 1px solid transparent;
+        padding: 15px;
+
+        & img {
+            width: 56px;
+            height: 56px;
+        }
+    }
+}
+
+/* All CSS related to the scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #514F59;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #242423;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333533;
+}
+
+.full-container {
+    display: flex;
+}
+
+.char-information {
+    display: flex;
+    flex-direction: column;
+}
+
+.full-build {
+    display: flex;
+}
+
+.tabs {
+    display: flex;
+    overflow: hidden;
+}
+
+.content-tabs button {
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.content-tabs {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0 10px;
+    gap: 5px;
+}
+
+.content-tabs span {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.contentlink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contentlink img {
+    width: 48px;
+    height: 100%;
+}
+
+.content-tabs button:hover {
+    background-color: #79B4A9;
+}
+
+.content-tabs button.active {
+    background-color: #8FB8DE;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    margin-top: 25px;
+    border-top: none;
+    animation: fadeEffect 1s;
+    width: 850px;
+    height: 600px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.equipment-name {
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+li {
+    padding: 5px 0;
+}
+
+.relic-name p,
+.ornament-name p {
+    padding: 0 5px;
+    color: #F29E38;
+}
+
+.full-stats p {
+    color: #F29E38;
+    font-weight: bold;
+}
+
+.equipment-images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.relics-images {
+    gap: 5px;
+}
+
+.collap {
+    color: #F29E38;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 400px;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.lc-collap {
+    color: #F29E38;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.status {
+    height: 700px;
+    overflow-y: auto;
+}
+
+.stat-collap {
+    color: #F29E38;
+    padding: 14px 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    width: 400px;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+}
+
+.stats-explications {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lc-content {
+    max-width: 300px;
+    padding: 0 15px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.collap:hover,
+.lc-collap:hover,
+.stat-collap:hover {
+    background-color: #033F63;
+}
+
+.collap.active,
+.lc-collap.active,
+.stat-collap.active {
+    background-color: #590925;
+}
+
+.collap::after,
+.lc-collap::after,
+.stat-collap::after {
+    content: '\002B';
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.collap.active::after,
+.lc-collap.active::after,
+.stat-collap.active::after {
+    content: '\2212';
+}
+
+.content-explanation {
+    padding: 0 15px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.content-explanation p {
+    color: var(--dark-theme-text-color);
+    font-weight: normal;
+}
+
+.stats-content {
+    max-width: 500px;
+    padding: 0 15px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-in-out;
+}
+
+.stats-content p {
+    text-align: center;
+}
+
+.relics-images,
+.ornaments-images {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 10px;
+}
+
+.relics-images p,
+.ornaments-images p {
+    font-weight: bold;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#relics img {
+    width: 98px;
+}
+
+#lightcones>div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 10px;
+}
+
+.lightcone-image {
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    cursor: default;
+    position: relative;
+    background-color: transparent;
+}
+
+.lightcone-image img {
+    width: 148px;
+    height: 100%;
+}
+
+.imp-ribbon {
+    width: 60px;
+    font-size: 14px;
+    padding: 4px;
+    position: absolute;
+    right: -5px;
+    top: 30px;
+    text-align: center;
+    border-radius: 25px;
+    transform: rotate(20deg);
+    background-color: #F29E38;
+    color: white;
+}
+
+.lc-ribbon {
+    width: max-content;
+    font-size: 14px;
+    padding: 5px 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: #AB9B96;
+    color: white;
+}
+
+.recommended {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+
+    & a {
+        text-decoration: none;
+    }
+}
+
+.next-content {
+    padding: 5px 8px;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    background-color: #1D1E2C;
+    border-radius: 8px;
+    color: var(--dark-theme-text-color);
+    filter: grayscale(100%);
+
+    & img {
+        width: 40px;
+        height: 40px;
+    }
+
+    &:hover {
+        filter: grayscale(0%);
+    }
+}
+
+table,
+tr,
+td {
+    color: #F29E38;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+td img {
+    width: 48px;
+    height: 100%;
+}
+
+@media (width <=1080px) {
+    .full-container {
+        flex-direction: column;
+    }
+
+    .full-build {
+        flex-direction: column;
+    }
+
+    .tabcontent {
+        width: auto;
+    }
+    
+    .content-tabs {
+        justify-content: space-evenly;
+    }
+
+    body {
+        overflow-y: auto;
+        width: 85%;
+    }
+
+    #lightcones > div {
+        max-width: 600px;
+        flex-wrap: wrap;
+    }
+
+    .lc-content {
+        max-width: 500px;
+    }
+
+    .build-info {
+        flex-direction: column;
+    }
+
+    .char-information {
+        align-items: center;
+    }
+
+    .menu {
+        margin-bottom: 10px;
+    }
+
+    .equipment-name {
+        flex-direction: column;
+    }
+}
