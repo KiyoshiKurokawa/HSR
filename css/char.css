@@ -298,7 +298,6 @@ li {
     display: flex;
     justify-content: space-evenly;
     padding: 0 10px;
-    flex-wrap: wrap;
 }
 
 .relics-images p,
@@ -429,6 +428,11 @@ td img {
     .full-build {
         flex-direction: column;
         margin-top: 30px;
+    }
+
+    .relics-images,
+    .ornaments-images {
+        flex-wrap: wrap;
     }
 
     .tabcontent {
