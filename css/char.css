@@ -428,6 +428,7 @@ td img {
 
     .full-build {
         flex-direction: column;
+        margin-top: 30px;
     }
 
     .tabcontent {
