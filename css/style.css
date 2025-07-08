@@ -58,7 +58,9 @@ body {
     justify-content: center;
     padding: 5px 5px;
     gap: 10px;
-    width: 500px;
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
 
     & img {
         width: 36px;
@@ -179,8 +181,5 @@ a {
     .char {
         flex: 1 1 100%;
         max-width: 100%;
-    }
-    .body {
-        min-width: 412px;
     }
 }
