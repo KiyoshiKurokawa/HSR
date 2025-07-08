@@ -1,0 +1,182 @@
+:root {
+    --dark-theme-background-color: #2d3142;
+    --dark-theme-text-color: #eae8ff;
+    --dark-theme-card-color: #15151d;
+    --fire-shadow: #F15152;
+    --ice-shadow: #1BE7FF;
+    --imaginary-shadow: #FFFD82;
+    --lightning-shadow: #7E52A0;
+    --physical-shadow: #F8F1FF;
+    --quantum-shadow: #6D72C3;
+    --wind-shadow: #85FF9E;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-theme-background-color);
+    color: var(--dark-theme-text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* All CSS related to the scrollbar */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #514F59;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #242423;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333533;
+}
+
+/* All CSS related to the filter */
+.filter {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+.element-filter,
+.path-filter {
+    display: flex;
+    justify-content: center;
+    padding: 5px 5px;
+    gap: 10px;
+    min-width: 500px;
+
+    & img {
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.element-filter button,
+.path-filter button {
+    background-color: #15151d;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+button.active {
+    background-color: #483519;
+}
+
+.char-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.char {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: var(--dark-theme-card-color);
+    border-radius: 25px;
+    flex: 1 1 calc(20% - 20px);
+    max-width: calc(20% - 20px);
+    min-width: 200px;
+    border: 1px solid black;
+
+    & img {
+        border-radius: 25px;
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+
+/* Give a nice shadow depending on element */
+.char:hover {
+    transform: scale(1.035);
+
+    &:has(.lightning):hover {
+        box-shadow: 0 0 1px 2px var(--lightning-shadow);
+    }
+
+    &:has(.fire):hover {
+        box-shadow: 0 0 1px 2px var(--fire-shadow);
+    }
+
+    &:has(.ice):hover {
+        box-shadow: 0 0 1px 2px var(--ice-shadow);
+    }
+
+    &:has(.quantum):hover {
+        box-shadow: 0 0 1px 2px var(--quantum-shadow);
+    }
+
+    &:has(.imaginary):hover {
+        box-shadow: 0 0 1px 2px var(--imaginary-shadow);
+    }
+
+    &:has(.wind):hover {
+        box-shadow: 0 0 1px 2px var(--wind-shadow);
+    }
+
+    &:has(.physical):hover {
+        box-shadow: 0 0 1px 2px var(--physical-shadow);
+    }
+}
+
+.information {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    & img {
+        width: 56px;
+        height: 56px;
+    }
+}
+
+.name p {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+
+
+    & p {
+        color: var(--dark-theme-text-color);
+    }
+}
+
+/* Media Queries below */
+@media (width <=1024px) {
+    .char {
+        flex: 1 1 calc(33.33% - 20px);
+    }
+}
+
+@media (width <=768px) {
+    .char {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (width <=500px) {
+    .char {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
