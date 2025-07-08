@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acheron Build</title>
+    <meta name="description" content="My personal project for HSR">
+    <meta name="keywords" content="HSR">
+    <meta name="author" content="Kiyoshi Kurokawa">
+    <link rel="stylesheet" href="css/char.css">
+    <link rel="icon" href="assets/bg.png">
+    <script src="js/tabs.js" defer></script>
+    <script src="js/collap.js" defer></script>
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="close">
+                <button>
+                    <a href="index.html">
+                        <img src="assets/QuitIcon.png" alt="Return">
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="full-container">
+                <div class="char-information">
+                    <div>
+                        <div class="avatar">
+                            <img src="assets/characters/splash/1308.png" alt="Acheron Avatar">
+                            <h1>Acheron</h1>
+                        </div>
+                        <div class="char-details">
+                            <div>
+                                <img src="assets/elements/Thunder.png" alt="Lightning Element">
+                            </div>
+                            <div>
+                                <img src="assets/path/Nihility.png" alt="Nihility Path">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-build">
+                    <div class="status">
+                        <div class="recommended">
+                            <div>
+                                <h1>Status Recomendados</h1>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td rowspan="3">
+                                            <img src="https://homdgcat.wiki/images/Misc/_ATK.png" alt="">
+                                        </td>
+                                        <td rowspan="3">ATK</td>
+                                        <td>In the Name of the World</td>
+                                        <td>3.905+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Good Night and Sleep Well</td>
+                                        <td>3.612+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Boundless Choreo</td>
+                                        <td>3.612+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://homdgcat.wiki/images/AddProp/IconCriticalChance.png"
+                                                alt="">
+                                        </td>
+                                        <td>CRIT Rate</td>
+                                        <td></td>
+                                        <td>72%~84%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://homdgcat.wiki/images/AddProp/IconCriticalDamage.png"
+                                                alt="">
+                                        </td>
+                                        <td>CRIT DMG</td>
+                                        <td></td>
+                                        <td>160%~180%+</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="stats-explications">
+                                <button type="button" class="stat-collap">Explicação</button>
+                                <div class="stats-content">
+                                    <ul>
+                                        <li>
+                                            ATK é bom, mas não precisa ser necessariamente um foco. Qualquer ATK que
+                                            vier
+                                            acima disso é lucro.
+                                        </li>
+                                        <li>
+                                            Seu CRIT Rate Máximo deve ser 84%, caso não tenha nenhum efeito que dê
+                                            CRIT Rate (Como por exemplo: Talento da Fu Xuan ou E1 da Stelle
+                                            Remembrance).
+                                            Isso é por conta que ela ganha 4% do Piooner ao debuffar e 12% do Ornamento.
+                                        </li>
+                                        <li>
+                                            Esse é um bom ponto para parar no CRIT DMG, mas qualquer valor acima é
+                                            totalmente bem-vindo. Especialmente se considerar que o 3° LC diminui a
+                                            quantidade de CRIT Rate, possibilitando mais CDMG.
+                                        </li>
+                                        <li>Qualquer SPD que vier é bem-vindo, mas não precisa se preocupar muito.
+                                            Como a Acheron ganha stacks dos aliados que debuffam, é mais importante
+                                            eles terem SPD do que ela própria (a não ser que seja uma estratégia
+                                            específica).
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div>
+                            <div class="content-tabs">
+                                <div class="content-button">
+                                    <button class="contentlink" onclick="openContent(event, 'lightcones')"
+                                        id="defaultOpen">
+                                        <img src="assets/IconAvatarLightCone.png"
+                                            alt="Light Cones Icon">
+                                        <span>Light Cones</span>
+                                    </button>
+                                </div>
+                                <div class="content-button">
+                                    <button class="contentlink" onclick="openContent(event, 'relics')">
+                                        <img src="assets/IconAvatarRelic.png"
+                                            alt="Relics Icon">
+                                        <span>Relíquias</span>
+                                    </button>
+                                </div>
+                                <div class="content-button">
+                                    <button class="contentlink" onclick="openContent(event, 'tips')">
+                                        <img src="assets/StoryLineIcon.png"
+                                            alt="Information Icon">
+                                        <span>Informações</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="lightcones" class="tabcontent">
+                                <div>
+                                    <div>
+                                        <div>
+                                            <button class="lightcone-image">
+                                                <img src="assets/lightcones/nihility/23004.png"
+                                                    alt="LC do Welt">
+                                                <span class="imp-ribbon">S1</span>
+                                                <span class="lc-ribbon">In the Name of the World</span>
+                                            </button>
+                                        </div>
+                                        <div class="lc-explanation">
+                                            <button type="button" class="lc-collap">Explicação</button>
+                                            <div class="lc-content">
+                                                <p>
+                                                    A melhor opção caso todos os outros LCs estejam S1. Ele dá um
+                                                    leve boost na skill, mas a maior parte do dano da Acheron vem
+                                                    da sua ult, então é um efeito OK.
+                                                </p>
+                                                <h3>Evolução de Dano</h3>
+                                                <ul>
+                                                    <li>S1: 336.617</li>
+                                                    <li>S2: 343.113</li>
+                                                    <li>S3: 349.573</li>
+                                                    <li>S4: 356.049</li>
+                                                    <li>S5: 362.545</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <button class="lightcone-image">
+                                                <img src="assets/lightcones/nihility/21001.png"
+                                                    alt="LC da Pela">
+                                                <span class="imp-ribbon">S1</span>
+                                                <span class="lc-ribbon">Good Night and Sleep Well</span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="lc-collap">Explicação</button>
+                                            <div class="lc-content">
+                                                <p>
+                                                    Um forte candidato, já que inimigos sempre devem ter 3+ debuffs
+                                                    para garantir seu efeito. Melhora e pode ficar em 1° lugar,
+                                                    dependendo
+                                                    da sua superimposição.
+                                                </p>
+                                                <h3>Evolução de Dano</h3>
+                                                <ul>
+                                                    <li>S1: 324.753</li>
+                                                    <li>S2: ???</li>
+                                                    <li>S3: ???</li>
+                                                    <li>S4: ???</li>
+                                                    <li>S5: 373.548</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <button class="lightcone-image">
+                                                <img src="assets/lightcones/nihility/21044.png"
+                                                    alt="LC da Acheron com a Black Swan">
+                                                <span class="imp-ribbon">S1</span>
+                                                <span class="lc-ribbon" style="right: 35px;">Boundless Choreo</span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="lc-collap">Explicação</button>
+                                            <div class="lc-content">
+                                                <p>
+                                                    Esse LC tem efeitos legais, ele consegue diminuir a pressão de
+                                                    CRIT Rate, além de dar um CRIT DMG dentro da fight,
+                                                    desde que o inimigo tenha Slow ou DEF down.
+                                                </p>
+                                                <h3>Evolução de Dano</h3>
+                                                <ul>
+                                                    <li>S1: 295.094</li>
+                                                    <li>S2: ???</li>
+                                                    <li>S3: ???</li>
+                                                    <li>S4: ???</li>
+                                                    <li>S5: 333.228</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="relics" class="tabcontent">
+                                <div>
+                                    <div class="equipment-name">
+                                        <div class="relic-name">
+                                            <p>Pioneer Diver of Dead Waters</p>
+                                            <div class="equipment-images">
+                                                <div class="relics-images">
+                                                    <div>
+                                                        <img src="assets/relics/117_0.png"
+                                                            alt="Capacete do Piooner">
+                                                        <p>HP</p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="assets/relics/117_1.png"
+                                                            alt="Luva do Piooner">
+                                                        <p>ATK</p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="assets/relics/117_2.png"
+                                                            alt="Peito do Piooner">
+                                                        <p>CRIT</p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="assets/relics/117_3.png"
+                                                            alt="Bota do Piooner">
+                                                        <p>ATK</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="collap">Relíquias - Explicação</button>
+                                                <div class="content-explanation">
+                                                    <p>
+                                                        Como a Acheron se baseia inteiramente em interagir com debuffs,
+                                                        essa é a opção de set mais sólida, dando DMG%, CRIT Rate e CRIT
+                                                        DMG. <br>
+                                                        Como não temos o LC da Acheron (ou qualquer LC que dê debuff), o
+                                                        efeito das 4 peças tem no geral 50% de uptime (assumindo que
+                                                        você ulte a cada 2 turnos). <br>
+                                                        Lembrando que ela precisa ter mais 2 debuffs para garantir o
+                                                        efeito completo fora da ult, mas como ela é jogada com debuffers
+                                                        isso é só um detalhe.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ornament-name">
+                                            <p>Izumo Gensei and Takama Divine Realm</p>
+                                            <div class="ornaments-images">
+                                                <div>
+                                                    <img src="assets/relics/314_0.png"
+                                                        alt="Esfera do Izumo">
+                                                    <p>ATK</p>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/relics/314_1.png"
+                                                        alt="Corda do Izumo">
+                                                    <p>ATK</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="collap">Ornamentos - Explicação</button>
+                                                <div class="content-explanation">
+                                                    <p>
+                                                        Excelente ornamento que diminue bastante os critérios de CRIT
+                                                        Rate, desde que tenha um outro personagem do mesmo elemento no
+                                                        time e tem um ATK% extra. <br>
+                                                        E como a Acheron possui uma Bonus Ability que requer outros
+                                                        aliados Nihility no time para aumentar o dano (além de precisar
+                                                        de debuffers para ganhar stacks para a ult),
+                                                        é uma excelente opção, a não ser que esteja E6 (O que não é no
+                                                        nosso caso).
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tips" class="tabcontent">
+                                <ul>
+                                    <li>Para tirar o maior proveito da Bonus Ability 2 da Acheron, o ideal é que ela
+                                        sempre seja utilizada com 2 Nihility. É possível jogar com 1 Nihility + 1
+                                        Harmony, mas o dano vai ser menor, além de que significa uma ult mais lenta,
+                                        exceto caso você utilize ela junto de alguém que consiga puxar ela (Como a
+                                        Bronya, mas o SP é pesado).</li>
+                                    <li>Para cada debuff inflingido no inimigo (Também contam debuffs que os
+                                        próprios inimigos inflingem em si próprios), a Acheron ganha 1 Stack para
+                                        lançar a ultimate. Com 9 ela consegue utilizá-la, mas graças a bonus Ability
+                                        1 dela, você também pode guardar até 3 Pontos por debuff. Isso significa que
+                                        caso você tenha uma ultimate que vá a debuffar e ainda tenha slots para
+                                        guardar esses pontos, é melhor você esperar para lançar a ultimate.
+                                        Lembrando que ela não consegue ganhar esses slots na ultimate, mesmo que ela
+                                        dê o debuff no começo dela.</li>
+                                    <li>Para maximizar o bonus da sua bonus ability 3, o ideal é que ela ulte pelo
+                                        menos a cada 3 turnos, sendo 2 turnos a melhor situação possível. Também é
+                                        ideal que sempre que ela vá dar os primeiros 3 hits ela sempre hite o
+                                        inimigo com a flor na cabeça, para ganhar o buff.</li>
+                                    <li>A ultimate da Acheron dá a maior quantidade de dano dependendo das flores no
+                                        inimigo, sendo necessário 9 para a maior quantidade de dano possível em
+                                        single target.</li>
+                                    <li>Como não temos nenhum LC que dê debuff, é importante que a Acheron consiga
+                                        quebrar o inimigo. Agora com o Aventurine E2, ele consegue dar debuff só com
+                                        o basic, dando mais stacks a ela.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <div class="menu">
+            <a href="/Anaxa.html">
+                <button class="next-content">
+                    <img src="assets/characters/icon/1405.png" alt="Anaxa">
+                    <span>Anaxa</span>
+                </button>
+            </a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
