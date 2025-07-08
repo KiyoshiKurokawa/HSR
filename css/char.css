@@ -422,6 +422,12 @@ td img {
 }
 
 @media (width <=1400px) {
+    body {
+        width: 90%;
+        margin: 0 auto;
+        overflow-y: auto;
+    }
+
     .tabcontent {
         width: auto;
         overflow-y: auto;
@@ -437,8 +443,8 @@ td img {
     }
 
     tr {
-        font-size: 0.9em;
-        padding: 3;
+        font-size: 0.85em;
+        padding: 3px;
     }
 }
 
@@ -483,7 +489,7 @@ td img {
 
     tr {
         font-size: 0.9em;
-        padding: 3;
+        padding: 3px;
     }
 
     .build-info {
