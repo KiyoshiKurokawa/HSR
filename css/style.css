@@ -57,7 +57,7 @@ body {
     justify-content: center;
     padding: 5px 5px;
     gap: 10px;
-    min-width: 500px;
+    width: 500px;
 
     & img {
         width: 36px;
