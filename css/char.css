@@ -183,7 +183,8 @@ li {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     background-color: transparent;
     border: none;
     border-radius: 25px;
@@ -217,7 +218,8 @@ li {
     text-align: center;
     font-size: 14px;
     font-weight: bold;
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     background-color: transparent;
     border: none;
     border-radius: 25px;
@@ -296,6 +298,7 @@ li {
     display: flex;
     justify-content: space-evenly;
     padding: 0 10px;
+    flex-wrap: wrap;
 }
 
 .relics-images p,
@@ -433,6 +436,7 @@ td img {
     
     .content-tabs {
         justify-content: space-evenly;
+        margin-top: 50px;
     }
 
     body {
