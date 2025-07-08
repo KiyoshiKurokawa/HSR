@@ -107,6 +107,7 @@ body {
     margin: 0;
     padding: 0 10px;
     gap: 5px;
+    flex-wrap: wrap;
 }
 
 .content-tabs span {
@@ -139,7 +140,8 @@ body {
     margin-top: 25px;
     border-top: none;
     animation: fadeEffect 1s;
-    width: 850px;
+    width: 100%;
+    max-width: 850px;
     height: 600px;
     overflow-y: auto;
     text-align: center;
@@ -204,8 +206,9 @@ li {
 }
 
 .status {
-    height: 700px;
+    max-height: 700px;
     overflow-y: auto;
+    margin: 0 auto;
 }
 
 .stat-collap {
