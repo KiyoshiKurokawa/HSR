@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pela Build</title>
+    <meta name="description" content="My personal project for HSR">
+    <meta name="keywords" content="HSR">
+    <meta name="author" content="Kiyoshi Kurokawa">
+    <link rel="stylesheet" href="css/char.css">
+    <link rel="stylesheet" href="css/relics.css">
+    <link rel="icon" href="assets/bg.png">
+    <script src="js/tabs.js" defer></script>
+    <script src="js/collap.js" defer></script>
+    <script src="js/random.js" defer></script>
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="close">
+                <button>
+                    <a href="index.html">
+                        <img src="assets/QuitIcon.png" alt="Return">
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="full-container">
+                <div class="char-information">
+                    <div>
+                        <div class="avatar">
+                            <img src="assets/characters/splash/1106.png" alt="Pela Avatar">
+                            <h1>Pela</h1>
+                        </div>
+                        <div class="char-details">
+                            <div>
+                                <img src="assets/elements/Ice.png" alt="Wind Element">
+                            </div>
+                            <div>
+                                <img src="assets/path/Nihility.png" alt="Nihility Path">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-build">
+                    <div class="status">
+                        <div class="recommended">
+                            <div>
+                                <h1>Status Recomendados</h1>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/IconStatusProbability.png" alt="Effect Hit Rate">
+                                        </td>
+                                        <td>EHR</td>
+                                        <td>56.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/IconStatusResistance.png" alt="Effect RES">
+                                        </td>
+                                        <td>Effect RES</td>
+                                        <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="https://homdgcat.wiki/images/Misc/_SPD.png" alt="SPD">
+                                        </td>
+                                        <td>SPD</td>
+                                        <td>161+</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="stats-explications">
+                                <button type="button" class="stat-collap">Explicação</button>
+                                <div class="stats-content">
+                                    <ul>
+                                        <li>
+                                            Como a Pela ganha 10% de EHR do Trace Bonus em combate, esse é o suficiente para
+                                            garantir todos os debuffs dela contra todos os inimigos atualmente.
+                                        </li>
+                                        <li>
+                                            Como estamos com a opção do Broken Keel, que no geral é bom para todo mundo, é
+                                            necessário que ela tenha 30% para ativar o efeito. Caso o Aventurine esteja como
+                                            aliado, não é necessário desde que ela esteja no efeito do escudo.
+                                        </li>
+                                        <li>
+                                            No geral esse SPD é o suficiente para tudo. Mas se vier mais, é muito bem-vindo.
+                                            Se quiser tentar a ideia do Eagle, como mencionado na aba de relíquias, o ideal é
+                                            ter 167 (ou acima).
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div>
+                            <div class="content-tabs">
+                                <div class="content-button">
+                                    <button class="contentlink" onclick="openContent(event, 'lightcones')"
+                                        id="defaultOpen">
+                                        <img src="assets/IconAvatarLightCone.png" alt="Light Cones Icon">
+                                        <span>Light Cones</span>
+                                    </button>
+                                </div>
+                                <div class="content-button">
+                                    <button class="contentlink" onclick="openContent(event, 'relics')">
+                                        <img src="assets/IconAvatarRelic.png" alt="Relics Icon">
+                                        <span>Relíquias</span>
+                                    </button>
+                                </div>
+                                <div class="content-button">
+                                    <button class="contentlink" onclick="openContent(event, 'tips')">
+                                        <img src="assets/StoryLineIcon.png" alt="Information Icon">
+                                        <span>Informações</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="lightcones" class="tabcontent">
+                                <div>
+                                    <div>
+                                        <div>
+                                            <button class="lightcone-image">
+                                                <img src="assets/lightcones/erudition/21015.png"
+                                                    alt="LC do Luka">
+                                                <span class="imp-ribbon">S1</span>
+                                                <span class="lc-ribbon" style="left:-40px";>Resolution Shines as Pearls of Sweat</span>
+                                            </button>
+                                        </div>
+                                        <div class="lc-explanation">
+                                            <button type="button" class="lc-collap">Explicação</button>
+                                            <div class="lc-content">
+                                                <p>
+                                                    Casa bem com o fato dela dar DEF Down, mas dependendo da imposição, o debuff
+                                                    fica inconsistente. É um pouco estranho também com o auto, já que o debuff
+                                                    só dura 1 turno, então as vezes o auto vai soltar a ult antes do inimigo agir
+                                                    então quando você lançar a ultimate do seu DPS ele vai estar sem o efeito.
+                                                </p>
+                                                <h3>EHR Necessário</h3>
+                                                <ul>
+                                                    <li>S1: </li>
+                                                    <li>S2: </li>
+                                                    <li>S3: </li>
+                                                    <li>S4: </li>
+                                                    <li>S5: 56.7%</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <button class="lightcone-image">
+                                                <img src="assets/lightcones/erudition/22000.png" alt="LC da SW Evento">
+                                                <span class="imp-ribbon">S5</span>
+                                                <span class="lc-ribbon" style="left:-15px";>Before the Tutorial Mission Starts</span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="lc-collap">Explicação</button>
+                                            <div class="lc-content">
+                                                <p>
+                                                    É bom para comps que a Pela não use tantas skills, já que habilita ela
+                                                    utilizar somente Basics para recarregar a ultimate dela.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="relics" class="tabcontent">
+                                <div>
+                                    <div class="equipment-name">
+                                        <div class="relic-name">
+                                            <p id="set-name" class="set-name"></p>
+                                            <div class="equipment-images">
+                                                <div class="relics-images">
+                                                    <div>
+                                                        <img id="head" class="set-image" src="" alt="Capacete">
+                                                        <p>HP</p>
+                                                    </div>
+                                                    <div>
+                                                        <img id="glove" class="set-image" src="" alt="Luva">
+                                                        <p>ATK</p>
+                                                    </div>
+                                                    <div>
+                                                        <img id="chest" class="set-image" src="" alt="Peito">
+                                                        <p>EHR/DEF/HP</p>
+                                                    </div>
+                                                    <div>
+                                                        <img id="boots" class="set-image" src="" alt="Bota">
+                                                        <p>SPD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="collap">Relíquias - Explicação</button>
+                                                <div class="content-explanation">
+                                                    <p>
+                                                        Como ela joga 100% do tempo no auto, utilizar a combinação de
+                                                        2p de SPD% x2 é provavelmente a melhor escolha. Existe a possibilidade
+                                                        de utilizar 4pc Eagle, mas o efeito das 4 peças tem grandes chances de
+                                                        não ser tão efetivo já que o auto sempre vai lançar a ultimate sempre que
+                                                        encher. <br>
+                                                        A escolha do Peito é dependente do LC, como o 2° LC dá bastante EHR pode
+                                                        utilizar os outros 2 para sobrevivência.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ornament-name">
+                                            <p>Broken Keel</p>
+                                            <div class="ornaments-images">
+                                                <div>
+                                                    <img src="assets/relics/310_0.png" alt="Esfera">
+                                                    <p>DEF/HP</p>
+                                                </div>
+                                                <div>
+                                                    <img src="assets/relics/310_1.png" alt="Corda">
+                                                    <p>ERR</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="collap">Ornamentos - Explicação</button>
+                                                <div class="content-explanation">
+                                                    <p>
+                                                        É basicamente universal (exceto para DOT e Break), então é uma opção decente.
+                                                        O maior problema é os 30% de Effect RES.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tips" class="tabcontent">
+                                <h4>3 Turn Ult Rotation</h4>
+                                <p>Resolution Shines as Pearls of Sweat</p>
+                                <p>Requerimentos: +15 Corda ERR / Inimigo Debuffado / Talento Lv. 10</p>
+                                <p>Ultimate -> Basic -> Basic = 112/110 Energy</p>
+
+                                <h4>2 Turn Ult Rotation</h4>
+                                <p>Before the Tutorial Mission Starts</p>
+                                <p>Requerimentos: +15 Corda ERR / Inimigo debuffado / Talento Lv. 10</p>
+                                <p>Ultimate -> Basic -> Basic = 117/110 Energy</p>
+
+                                <p>Resolution Shines as Pearls of Sweat</p>
+                                <p>Requerimentos: +15 Corda ERR / Inimigo Debuffado / Talento Lv. 10</p>
+                                <p>Ultimate -> Skill -> Skill = 112/110 Energy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <div class="menu">
+            <a href="Natasha.html">
+                <button class="next-content">
+                    <img src="assets/characters/icon/1105.png" alt="Natasha">
+                    <span>Natasha</span>
+                </button>
+            </a>
+            <a href="Qingque.html">
+                <button class="next-content">
+                    <img src="assets/characters/icon/1201.png" alt="Qingque">
+                    <span>Qingque</span>
+                </button>
+            </a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
