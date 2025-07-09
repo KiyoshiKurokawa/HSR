@@ -511,8 +511,9 @@ td img {
 }
 
 @media (width <=500px) {
-    tr {
-        font-size: 0.75px;
-        padding: 3px;
+    .stats-content {
+        width: 100%;
+        overflow-y: auto;
+        margin-top: 20px;
     }
 }
