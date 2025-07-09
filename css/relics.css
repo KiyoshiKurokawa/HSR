@@ -1,5 +1,5 @@
 .set-image {
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     opacity: 1;
 }
 
@@ -8,6 +8,6 @@
 }
 
 .set-name {
-    transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
     opacity: 1;
 }
