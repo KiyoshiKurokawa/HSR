@@ -58,4 +58,4 @@ function trocarReliquia() {
 
 setInterval(trocarReliquia, 8000);
 
-trocarReliquia();
+window.addEventListener('DOMContentLoaded', trocarReliquia);
