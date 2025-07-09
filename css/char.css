@@ -509,3 +509,10 @@ td img {
         flex-direction: column;
     }
 }
+
+@media (width <=500px) {
+    tr {
+        font-size: 0.75px;
+        padding: 3px;
+    }
+}
