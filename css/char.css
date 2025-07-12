@@ -229,6 +229,10 @@ li {
     cursor: pointer;
 }
 
+.all-content {
+     width: 850px;
+ }
+
 .stats-explications {
     display: flex;
     flex-direction: column;
@@ -422,6 +426,12 @@ td img {
     height: 100%;
 }
 
+@media (width >=1400px) {
+     .all-content {
+         width: 850px;
+     }
+}
+
 @media (width <=1400px) {
     body {
         width: 90%;
@@ -447,6 +457,10 @@ td img {
         font-size: 0.8em;
         padding: 3px;
     }
+
+     all-content {
+         width: auto;
+     }
 }
 
 @media (width <=1080px) {
