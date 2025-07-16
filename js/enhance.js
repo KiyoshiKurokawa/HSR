@@ -70,7 +70,7 @@ function enhanceStatus() {
         document.getElementById("jingliu-lc1-text").style.right = "10px";
         document.getElementById("jingliu-aeon").style.display = "block";
         document.getElementById("jingliu-vow-lc").style.display = "none";
-        document.getElementById("jingliu-lc1-dmg").innerHTML = "S5: 347.087";
+        document.getElementById("jingliu-lc1-dmg").innerHTML = "S5: 368.534";
         document.getElementById("jingliu-old-point").style.display = "list-item";
         document.getElementById("jingliu-buffed-point").style.display = "none";
         document.getElementById("jingliu-unbuff-vow").style.display = "block";
@@ -78,6 +78,6 @@ function enhanceStatus() {
         document.getElementById("jingliu-second-lc").src = "assets/lightcones/destruction/21012.png";
         document.getElementById("jingliu-lc2-text").innerHTML = "A Secret Vow";
         document.getElementById("jingliu-lc2-text").style.right = "45px";
-        document.getElementById("jingliu-lc2-dmg").innerHTML = "S5: 342.411";
+        document.getElementById("jingliu-lc2-dmg").innerHTML = "S5: 364.492";
     }
 }
