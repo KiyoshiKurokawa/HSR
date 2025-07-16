@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jingliu Build</title>
+    <meta name="description" content="My personal project for HSR">
+    <meta name="keywords" content="HSR">
+    <meta name="author" content="Kiyoshi Kurokawa">
+    <link rel="stylesheet" href="css/char.css">
+    <link rel="icon" href="assets/bg.png">
+    <script src="js/tabs.js" defer></script>
+    <script src="js/collap.js" defer></script>
+    <script src="js/enhance.js" defer></script>
+
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="close">
+                <button>
+                    <a href="index.html">
+                        <img src="assets/QuitIcon.png" alt="Return">
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="full-container">
+                <div class="char-information">
+                    <div>
+                        <div class="avatar">
+                            <img src="assets/characters/splash/1212.png" alt="Jingliu Avatar">
+                            <h1>Jingliu</h1>
+                        </div>
+                        <div class="char-details">
+                            <div>
+                                <img src="assets/elements/Ice.png" alt="Ice Element">
+                            </div>
+                            <div>
+                                <img src="assets/path/Destruction.png" alt="Destruction Path">
+                            </div>
+                        </div>
+                        <div class="small-info">
+                            <div class="enhanced-status">
+                                <div>
+                                    <button onclick="enhanceStatus()" id="enhanced-button"
+                                        class="enhanced-enabled"></button>
+                                </div>
+                                <div>
+                                    <span id="enhanced-text">Enhanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="full-build">
+                    <div class="status">
+                        <div class="recommended">
+                            <div>
+                                <h1>Status Recomendados</h1>
+                            </div>
+                            <div>
+                                <table>
+                                    <tr>
+                                        <td rowspan="3">
+                                            <img id="jingliu-stat-img" src="assets/IconMaxHP.png" alt="">
+                                        </td>
+                                        <td rowspan="3" id="jingliu-stat-text">HP</td>
+                                        <td id="jingliu-lc-1">Ninja Record: Sount The Hunt</td>
+                                        <td id="jingliu-stat-1">7.101+</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="jingliu-lc-2">A Secret Vow</td>
+                                        <td id="jingliu-stat-2">6.501+</td>
+                                    </tr>
+                                    <tr>
+                                        <td id="jingliu-lc-3"></td>
+                                        <td id="jingliu-stat-3"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/IconCriticalChance.png" alt="">
+                                        </td>
+                                        <td>CRIT Rate</td>
+                                        <td></td>
+                                        <td>40%~50%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/IconCriticalDamage.png" alt="">
+                                        </td>
+                                        <td>CRIT DMG</td>
+                                        <td></td>
+                                        <td id="jingliu-cdmg">130%~140%+</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <img src="assets/IconSpeed.png" alt="">
+                                        </td>
+                                        <td>SPD</td>
+                                        <td></td>
+                                        <td>135</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="stats-explications">
+                                <button type="button" class="stat-collap">Explicação</button>
+                                <div class="stats-content">
+                                    <ul>
+                                        <li id="jingliu-hp-text">
+                                            Diferente da versão não buffada, HP% é bastante
+                                            importante para a Jingliu, já que não se tem muitas
+                                            fontes para se stackar.
+                                        </li>
+                                        <li id="jingliu-atk-text">
+                                            Como a Jingliu já ganha bastante ATK da sua
+                                            passiva, não precisa se preocupar tanto com
+                                            o ATK.
+                                        </li>
+                                        <li>
+                                            Como a Jingliu tem 50% no talento após a transformação,
+                                            esse é um bom valor de se pegar. 50% é o max, mas caso
+                                            tenha outras fontes de CR, esse valor flutua um pouco.
+                                        </li>
+                                        <li id="jingliu-new-cdmg">
+                                            Diferente da versão antiga, CRIT DMG não é assim tão
+                                            importante para a Jingliu, apesar de ainda ser bom ter
+                                            uma quantidade. Ela ganha 220% do talento com max stacks,
+                                            então você quase chega em 400% sozinho com o ornamento e
+                                            status recomendado.
+                                        </li>
+                                        <li id="jingliu-old-cdmg">
+                                            Como a Jingliu não precisa tanto de ATK% e tem um valor
+                                            ok para CRIT Rate, CRIT DMG é um dos maiores focos para
+                                            ela.
+                                        </li>
+                                        <li>
+                                            SPD é relativo a build, no geral é bom ter 135, mas
+                                            o valor exato seria +1 comparado ao da Bronya.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs">
+                        <div class="all-content">
+                            <div class="content-tabs">
+                                <div class="content-button">
+                                    <button class="contentlink" onclick="openContent(event, 'lightcones')"
+                                        id="defaultOpen">
+                                        <img src="assets/IconAvatarLightCone.png" alt="Light Cones Icon">
+                                        <span>Light Cones</span>
+                                    </button>
+                                </div>
+                                <div class="content-button">
+                                    <button class="contentlink" onclick="openContent(event, 'relics')">
+                                        <img src="assets/IconAvatarRelic.png" alt="Relics Icon">
+                                        <span>Relíquias</span>
+                                    </button>
+                                </div>
+                                <div class="content-button">
+                                    <button class="contentlink" onclick="openContent(event, 'tips')">
+                                        <img src="assets/StoryLineIcon.png" alt="Information Icon">
+                                        <span>Informações</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="lightcones" class="tabcontent">
+                                <div>
+                                    <div>
+                                        <div>
+                                            <button class="lightcone-image">
+                                                <img id="jingliu-first-lc" src="assets/lightcones/destruction/21012.png"
+                                                    alt="LC Destruction">
+                                                <span class="imp-ribbon">S5</span>
+                                                <span id="jingliu-lc1-text" class="lc-ribbon" style="right: 45px";>A Secret Vow</span>
+                                            </button>
+                                        </div>
+                                        <div class="lc-explanation">
+                                            <button type="button" class="lc-collap">Explicação</button>
+                                            <div class="lc-content">
+                                                <p id="jingliu-vow-lc">
+                                                    É um ótimo LC para tudo, vai dar um dano extra enorme. Pena que o
+                                                    efeito
+                                                    secundário dele não vai ser tão útil assim, já que muitas das vezes
+                                                    com um
+                                                    healer, o seu HP vai estar acima da quantidade pedida.
+                                                </p>
+                                                <p id="jingliu-aeon">
+                                                    É o LC que tem mais status em relação aos outros dois, além de dar
+                                                    um ATK% ao
+                                                    atacar. Ele também dá um efeito após quebrar o inimigo, que é legal,
+                                                    mas não é
+                                                    como se a Jingliu tivesse um Toughness Break incrível.
+                                                </p>
+                                                <h3>Evolução de Dano</h3>
+                                                <ul>
+                                                    <li id="jingliu-lc1-dmg">S5: 470.985</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>
+                                            <button class="lightcone-image">
+                                                <img id="jingliu-second-lc" src="assets/lightcones/destruction/22003.png" alt="LC">
+                                                <span class="imp-ribbon">S5</span>
+                                                <span id="jingliu-lc2-text" class="lc-ribbon">Ninja Record: Sount The
+                                                    Hunt</span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="lc-collap">Explicação</button>
+                                            <div class="lc-content">
+                                                <p id="jingliu-buff-event">
+                                                    Já que a Jingliu agora gosta de HP, é uma ótima pedida (se esse LC
+                                                    não tivesse no Mydei), só que como ela própria não drena o HP ao 
+                                                    atacar (é só dos aliados), ela precisa ser curada ou algum inimigo 
+                                                    bater nela 1x a cada 2 turnos. O CDMG não stacka tão bem como o
+                                                    DMG% do primeiro LC, então por isso ele perde.
+                                                </p>
+                                                <p id="jingliu-unbuff-vow">
+                                                    Um bom LC, mas infelizmente como ela sempre é jogada com um Healer, o
+                                                    segundo efeito não ativa com frequência.
+                                                </p>
+                                                <h3>Evolução de Dano</h3>
+                                                <ul>
+                                                    <li id="jingliu-lc2-dmg">S5: 466.936</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="jingliu-old-lc3">
+                                        <div>
+                                            <button class="lightcone-image">
+                                                <img src="assets/lightcones/destruction/23002.png" alt="LC Destruction">
+                                                <span class="imp-ribbon">S1</span>
+                                                <span class="lc-ribbon">Something Irrepleaceable</span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="lc-collap">Explicação</button>
+                                            <div class="lc-content">
+                                                <p>
+                                                    É um LC decente para a Jingliu, já que tem stats altos e dá um ATK%.
+                                                    O maior problema é que a Jingliu não tem nenhuma forma de garantir que
+                                                    os inimigos acertem ela para proccar o efeito de DMG% e o Healing não
+                                                    é tão incrível assim.
+                                                </p>
+                                                <h3>Evolução de Dano</h3>
+                                                <ul>
+                                                    <li>S1: 353.381</li>
+                                                    <li>S2: ???</li>
+                                                    <li>S3: ???</li>
+                                                    <li>S4: ???</li>
+                                                    <li>S5: ???</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="relics" class="tabcontent">
+                                <div>
+                                    <div class="equipment-name">
+                                        <div class="relic-name">
+                                            <p>Scholar Lost in Erudition</p>
+                                            <div class="equipment-images">
+                                                <div class="relics-images">
+                                                    <div>
+                                                        <img src="assets/relics/122_0.png" alt="Capacete do Scholar">
+                                                        <p>HP</p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="assets/relics/122_1.png" alt="Luva do Scholar">
+                                                        <p>ATK</p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="assets/relics/122_2.png" alt="Peito do Scholar">
+                                                        <p id="jingliu-chest">HP</p>
+                                                    </div>
+                                                    <div>
+                                                        <img src="assets/relics/122_3.png" alt="Bota do Scholar">
+                                                        <p>SPD</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="collap">Relíquias - Explicação</button>
+                                                <div class="content-explanation">
+                                                    <p>
+                                                        Como a maior parte do dano da Jingliu vem das Skills e Ultimate,
+                                                        é uma boa pedida. <br>
+                                                        Com o auto é um pouco difícil de pegar o timming
+                                                        da ult para dar o máximo de dano na skill caso esteja utilizando
+                                                        a
+                                                        Bronya, mas mesmo assim, é uma ótima opção, ainda mais com o
+                                                        free
+                                                        Crit Rate das 2 peças.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ornament-name">
+                                            <p id="jingliu-ornaments">Bone Collection's Serene Demesne</p>
+                                            <div class="ornaments-images">
+                                                <div>
+                                                    <img id="jingliu-sphere" src="assets/relics/319_0.png" alt="Esfera">
+                                                    <p>Ice DMG</p>
+                                                </div>
+                                                <div>
+                                                    <img id="jingliu-rope" src="assets/relics/319_1.png" alt="Corda">
+                                                    <p id="jingliu-new-rope">HP</p>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="collap">Ornamentos - Explicação</button>
+                                                <div class="content-explanation">
+                                                    <p id="jingliu-bone">
+                                                        Como agora a Jingliu é DPS baseada em HP, ela utiliza esse
+                                                        ornamento
+                                                        que dá HP% e um pouco de CDMG em combate.
+                                                    </p>
+                                                    <p id="jingliu-firmament">
+                                                        Apesar do Rutilant ser uma excelente pedida com o CRIT que dá
+                                                        também, o Firmament é uma opção bem decente que vai dar
+                                                        basicamente
+                                                        a mesma quantidade de dano na skill com 135 de SPD e um pouco a
+                                                        mais
+                                                        na ultimate.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tips" class="tabcontent">
+                                <ul>
+                                    <li id="jingliu-buffed-point">
+                                        Como o talento novo da Jingliu possui um efeito de a cada 20 perca de HP da
+                                        party
+                                        (seja por hits do inimigo ou consumo), personagens Remembrance são uma excelente
+                                        pedida para ela, já que é um alvo extra para ela drenar com a skill,
+                                        especialmente
+                                        se eles tiverem equipados com o LC da Hyacine (que não temos infelizmente).
+                                        Alguns
+                                        inimigos sendo bastante agressivos, podem ajudar nisso também, mantendo ela
+                                        bastante
+                                        no efeito Enhanced.
+                                    </li>
+                                    <li id="jingliu-old-point">
+                                        A Jingliu ganha bastante ATK no modo Enhanceed, mas esse ATK é baseado no Max HP
+                                        da party
+                                        consumido e isso muda baseado no LC que ela está usado (por conta de ser capado
+                                        no ATK base).
+                                        <h3>Party Max HP</h3>
+                                        <ul>
+                                            <li>On the Fall of an Aeon: 10.070+</li>
+                                            <li>A Secret Vow: 9.629+</li>
+                                            <li>Something Irrepleaceable: 10.511+</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        Como a Jingliu drena o HP dos aliados, é importante sempre jogar ela com um
+                                        healer, já
+                                        que com inimigos muito agressivos, o shield pode não ser suficiente.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer>
+        <div class="menu">
+            <a href="Jade.html">
+                <button class="next-content">
+                    <img src="assets/characters/icon/1314.png" alt="Jade">
+                    <span>Jade</span>
+                </button>
+            </a>
+            <a href="Kafka.html">
+                <button class="next-content">
+                    <img src="assets/characters/icon/1005.png" alt="Kafka">
+                    <span>Kafka</span>
+                </button>
+            </a>
+        </div>
+    </footer>
+    </div>
+</body>
+
+</html>
