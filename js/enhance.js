@@ -6,10 +6,10 @@ function enhanceStatus() {
         document.getElementById("enhanced-text").innerHTML = "Enhanced";
         document.getElementById("jingliu-stat-img").src = "assets/IconMaxHP.png";
         document.getElementById("jingliu-stat-text").innerHTML = "HP";
-        document.getElementById("jingliu-lc-1").innerHTML = "Ninja Record: Sount The Hunt";
-        document.getElementById("jingliu-stat-1").innerHTML = "7.101+";
-        document.getElementById("jingliu-lc-2").innerHTML = "A Secret Vow";
-        document.getElementById("jingliu-stat-2").innerHTML = "6.501+";
+        document.getElementById("jingliu-lc-1").innerHTML = "A Secret Vow";
+        document.getElementById("jingliu-stat-1").innerHTML = "6.501+";
+        document.getElementById("jingliu-lc-2").innerHTML = "Ninja Record: Sount The Hunt";
+        document.getElementById("jingliu-stat-2").innerHTML = "7.101+";
         document.getElementById("jingliu-lc-3").style.display = "none";
         document.getElementById("jingliu-stat-3").style.display = "none";
         document.getElementById("jingliu-cdmg").innerHTML = "130%~140%+";
