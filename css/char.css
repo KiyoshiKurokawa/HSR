@@ -229,9 +229,41 @@ li {
     cursor: pointer;
 }
 
-.all-content {
-     width: 850px;
- }
+
+.small-info {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.enhanced-status {
+    display: flex;
+    background-color: #171123;
+    border-radius: 50px;
+    padding: 15px;
+    gap: 5px;
+}
+
+#jingliu-atk-text, #jingliu-old-cdmg, 
+#jingliu-firmament, #jingliu-old-lc3, 
+#jingliu-aeon, #jingliu-old-point,
+#jingliu-unbuff-vow {
+    display: none;
+}
+
+#enhanced-button {
+    background-color: red;
+    border: none;
+    outline: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.enhanced-enabled {
+    background-color: green !important;
+}
 
 .stats-explications {
     display: flex;
@@ -273,6 +305,10 @@ li {
 .lc-collap.active::after,
 .stat-collap.active::after {
     content: '\2212';
+}
+
+.all-content {
+    width: 850px;
 }
 
 .content-explanation {
@@ -426,12 +462,6 @@ td img {
     height: 100%;
 }
 
-@media (width >=1400px) {
-     .all-content {
-         width: 850px;
-     }
-}
-
 @media (width <=1400px) {
     body {
         width: 90%;
@@ -457,10 +487,10 @@ td img {
         font-size: 0.8em;
         padding: 3px;
     }
-
-     .all-content {
-         width: auto;
-     }
+    
+    .all-content {
+        width: auto;
+    }
 }
 
 @media (width <=1080px) {
