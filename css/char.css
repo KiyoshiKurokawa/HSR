@@ -159,6 +159,10 @@ li {
     text-align: center;
 }
 
+.stats-content li {
+    list-style-type: none;
+}
+
 .relic-name p,
 .ornament-name p {
     padding: 0 5px;
