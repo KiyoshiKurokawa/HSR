@@ -1,5 +1,5 @@
 const pathButtons = document.querySelectorAll('.path-filter button');
-const elementButtons = document.querySelectorAll('.element-filter button');
+const elementButtons = document.querySelectorAll('.elements-filter button');
 
 const characters = document.querySelectorAll('.char');
 
