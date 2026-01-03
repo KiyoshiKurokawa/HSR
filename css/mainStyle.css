@@ -1,0 +1,49 @@
+:root {
+    --dark-theme-background-color: #2d3142;
+    --dark-theme-text-color: #eae8ff;
+    --dark-theme-card-color: #0C0910;
+    --fire-shadow: #F15152;
+    --ice-shadow: #1BE7FF;
+    --imaginary-shadow: #FFFD82;
+    --lightning-shadow: #7E52A0;
+    --physical-shadow: #F8F1FF;
+    --quantum-shadow: #6D72C3;
+    --wind-shadow: #85FF9E;
+    --text-highlight: #F29E38;
+    --five-star-background: #FFC857;
+    --five-star-outline: #FF8600;
+    --four-star-background: #613DC1;
+    --four-star-outline: #574AE2;
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark-theme-background-color);
+    color: var(--dark-theme-text-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #514F59;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #242423;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333533;
+}
