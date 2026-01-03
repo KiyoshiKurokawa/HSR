@@ -8,7 +8,8 @@
     <meta name="description" content="Personal Project for HSR">
     <meta name="keywords" content="HSR">
     <meta name="author" content="Kiyoshi Kurokawa">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="icon" href="assets/bg.png">
     <script src="js/filter.js" defer></script>
 </head>
@@ -16,998 +17,855 @@
 <body>
     <div>
         <header>
-            <div class="filter">
-                <div class="element-filter">
+            <div>
+                <div class="elements-filter">
                     <div>
                         <button data-element="fire">
-                            <img src="assets/elements/Fire.png" alt="Fire Icon">
+                            <img src="/assets/elements/Fire.png" alt="Fire Element">
                         </button>
                     </div>
                     <div>
                         <button data-element="ice">
-                            <img src="assets/elements/Ice.png" alt="Ice Icon">
+                            <img src="/assets/elements/Ice.png" alt="Ice Element">
                         </button>
                     </div>
                     <div>
                         <button data-element="imaginary">
-                            <img src="assets/elements/Imaginary.png" alt="Imaginary Icon">
+                            <img src="/assets/elements/Imaginary.png" alt="Imaginary Element">
                         </button>
                     </div>
                     <div>
                         <button data-element="lightning">
-                            <img src="assets/elements/Thunder.png" alt="Lightning Icon">
+                            <img src="/assets/elements/Thunder.png" alt="Lightning Element">
                         </button>
                     </div>
                     <div>
                         <button data-element="physical">
-                            <img src="assets/elements/Physical.png" alt="Physical Icon">
+                            <img src="/assets/elements/Physical.png" alt="Physical Element">
                         </button>
                     </div>
                     <div>
                         <button data-element="quantum">
-                            <img src="assets/elements/Quantum.png" alt="Quantum Icon">
+                            <img src="/assets/elements/Quantum.png" alt="Quantum Element">
                         </button>
                     </div>
                     <div>
                         <button data-element="wind">
-                            <img src="assets/elements/Wind.png" alt="Wind Icon">
+                            <img src="/assets/elements/Wind.png" alt="Wind Element">
                         </button>
                     </div>
                 </div>
                 <div class="path-filter">
                     <div>
                         <button data-path="abundance">
-                            <img src="assets/path/Abundance.png"
-                                alt="Abundance Icon">
+                            <img src="/assets/path/Abundance.png" alt="Abundance Path">
                         </button>
                     </div>
                     <div>
                         <button data-path="destruction">
-                            <img src="assets/path/Destruction.png"
-                                alt="Destruction Icon">
+                            <img src="/assets/path/Destruction.png" alt="Destruction Path">
                         </button>
                     </div>
                     <div>
                         <button data-path="erudition">
-                            <img src="assets/path/Erudition.png"
-                                alt="Erudition Icon">
+                            <img src="/assets/path/Erudition.png" alt="Erudition Path">
                         </button>
                     </div>
                     <div>
-                        <button  data-path="harmony">
-                            <img src="assets/path/Harmony.png" alt="Harmony Icon">
+                        <button data-path="harmony">
+                            <img src="/assets/path/Harmony.png" alt="Harmony Path">
                         </button>
                     </div>
                     <div>
                         <button data-path="nihility">
-                            <img src="assets/path/Nihility.png"
-                                alt="Nihility Icon">
+                            <img src="/assets/path/Nihility.png" alt="Nihility Path">
                         </button>
                     </div>
                     <div>
                         <button data-path="preservation">
-                            <img src="assets/path/Preservation.png"
-                                alt="Preservation Icon">
+                            <img src="/assets/path/Preservation.png" alt="Preservation Path">
                         </button>
                     </div>
                     <div>
                         <button data-path="remembrance">
-                            <img src="assets/path/Remembrance.png"
-                                alt="Remembrance Icon">
+                            <img src="/assets/path/Remembrance.png" alt="Remembrance Path">
                         </button>
                     </div>
                     <div>
                         <button data-path="hunt">
-                            <img src="assets/path/Hunt.png" alt="The Hunt Icon">
+                            <img src="/assets/path/Hunt.png" alt="The Hunt Path">
                         </button>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <div class="char-container">
-                <div class="char">
-                    <a href="Acheron.html">
-                        <div class="nihility lightning">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1308.png"
-                                    alt="Acheron Icon">
-                            </div>
-                            <div class="name">
-                                <p>Acheron</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Thunder.png"
-                                    alt="Lightning Icon">
-                                <img src="assets/path/Nihility.png"
-                                    alt="Nihility Icon">
-                            </div>
+            <div class="flex-container">
+                <a href="Acheron.html" class="char">
+                    <div class="character lightning nihility">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Thunder.png" alt="Lightning">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Nihility.png" alt="Nihility">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="Anaxa.html">
-                        <div class="erudition wind">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1405.png"
-                                    alt="Anaxa Icon">
-                            </div>
-                            <div class="name">
-                                <p>Anaxa</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Wind.png"
-                                    alt="Wind Icon">
-                                <img src="assets/path/Erudition.png"
-                                    alt="Erudition Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1308.png" alt="Acheron">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="erudition physical">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1302.png"
-                                    alt="Argenti Icon">
-                            </div>
-                            <div class="name">
-                                <p>Argenti</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Physical.png"
-                                    alt="Physical Icon">
-                                <img src="assets/path/Erudition.png"
-                                    alt="Erudition Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Anaxa.html" class="char">
+                    <div class="character wind erudition">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Wind.png" alt="Wind">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Erudition.png" alt="Erudition">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="destruction lightning">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1008.png"
-                                    alt="Arlan Icon">
-                            </div>
-                            <div class="name">
-                                <p>Arlan</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Thunder.png"
-                                    alt="Lightning Icon">
-                                <img src="assets/path/Destruction.png"
-                                    alt="Destruction Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1405.png" alt="Anaxa">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="harmony fire">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1009.png"
-                                    alt="Asta Icon">
-                            </div>
-                            <div class="name">
-                                <p>Asta</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Fire.png"
-                                    alt="Fire Icon">
-                                <img src="assets/path/Harmony.png"
-                                    alt="Harmony Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Argenti.html" class="char">
+                    <div class="character physical erudition">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Erudition.png" alt="Erudition">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="preservation imaginary">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1304.png"
-                                    alt="Aventurine Icon">
-                            </div>
-                            <div class="name">
-                                <p>Aventurine</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Imaginary.png"
-                                    alt="Imaginary Icon">
-                                <img src="assets/path/Preservation.png"
-                                    alt="Preservation Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1302.png" alt="Argenti">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="abundance lightning">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1211.png"
-                                    alt="Bailu Icon">
-                            </div>
-                            <div class="name">
-                                <p>Bailu</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Thunder.png"
-                                    alt="Lightning Icon">
-                                <img src="assets/path/Abundance.png"
-                                    alt="Abundance Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Arlan.html" class="char">
+                    <div class="character lightning destruction">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Thunder.png" alt="Lightning">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Destruction.png" alt="Destruction">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="harmony wind">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1101.png"
-                                    alt="Bronya Icon">
-                            </div>
-                            <div class="name">
-                                <p>Bronya</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Wind.png"
-                                    alt="Wind Icon">
-                                <img src="assets/path/Harmony.png"
-                                    alt="Harmony Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1008.png" alt="Arlan">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="destruction physical">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1107.png"
-                                    alt="Clara Icon">
-                            </div>
-                            <div class="name">
-                                <p>Clara</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Physical.png"
-                                    alt="Physical Icon">
-                                <img src="assets/path/Destruction.png"
-                                    alt="Destruction Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Asta.html" class="char">
+                    <div class="character fire harmony">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Fire.png" alt="Fire">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Harmony.png" alt="Harmony">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="hunt wind">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1002.png"
-                                    alt="Dan Heng Icon">
-                            </div>
-                            <div class="name">
-                                <p>Dan Heng</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Wind.png"
-                                    alt="Wind Icon">
-                                <img src="assets/path/Hunt.png"
-                                    alt="The Hunt Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1009.png" alt="Asta">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="destruction imaginary">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1213.png"
-                                    alt="Dan Heng • Imbibitor Lunae Icon">
-                            </div>
-                            <div class="name">
-                                <p>Dan Heng • Imbibitor Lunae</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Imaginary.png"
-                                    alt="Imaginary Icon">
-                                <img src="assets/path/Destruction.png"
-                                    alt="Destruction Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Aventurine.html" class="char">
+                    <div class="character imaginary preservation">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Imaginary.png" alt="Imaginary">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Preservation.png" alt="Preservation">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="hunt imaginary">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1305.png"
-                                    alt="Dr. Ratio Icon">
-                            </div>
-                            <div class="name">
-                                <p>Dr. Ratio</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Imaginary.png"
-                                    alt="Imaginary Icon">
-                                <img src="assets/path/Hunt.png"
-                                    alt="The Hunt Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1304.png" alt="Aventurine">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="hunt quantum">
-                            <div class="avatar">
-                                <img src="https://homdgcat.wiki/images/avatarshopicon/avatar/1015.png"
-                                    alt="EMIYA Icon">
-                            </div>
-                            <div class="name">
-                                <p>EMIYA</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Quantum.png"
-                                    alt="Quantum Icon">
-                                <img src="assets/path/Hunt.png"
-                                    alt="The Hunt Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Bailu.html" class="char">
+                    <div class="character lightning abundance">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Thunder.png" alt="Lightning">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Abundance.png" alt="Abundance">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="preservation quantum">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1208.png"
-                                    alt="Fu Xuan Icon">
-                            </div>
-                            <div class="name">
-                                <p>Fu Xuan</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Quantum.png"
-                                    alt="Quantum Icon">
-                                <img src="assets/path/Preservation.png"
-                                    alt="Preservation Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1211.png" alt="Bailu">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="abundance fire">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1301.png"
-                                    alt="Gallagher Icon">
-                            </div>
-                            <div class="name">
-                                <p>Gallagher</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Fire.png"
-                                    alt="Fire Icon">
-                                <img src="assets/path/Abundance.png"
-                                    alt="Abundance Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Bronya.html" class="char">
+                    <div class="character wind harmony">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Wind.png" alt="Wind">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Harmony.png" alt="Harmony">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="preservation ice">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1104.png"
-                                    alt="Gepard Icon">
-                            </div>
-                            <div class="name">
-                                <p>Gepard</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Ice.png" alt="Ice Icon">
-                                <img src="assets/path/Preservation.png"
-                                    alt="Preservation Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1101.png" alt="Bronya">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="nihility fire">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1210.png"
-                                    alt="Guinaifen Icon">
-                            </div>
-                            <div class="name">
-                                <p>Guinaifen</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Fire.png"
-                                    alt="Fire Icon">
-                                <img src="assets/path/Nihility.png"
-                                    alt="Nihility Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Clara.html" class="char">
+                    <div class="character physical destruction">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Destruction.png" alt="Destruction">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="harmony physical">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1215.png"
-                                    alt="Hanya Icon">
-                            </div>
-                            <div class="name">
-                                <p>Hanya</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Physical.png"
-                                    alt="Physical Icon">
-                                <img src="assets/path/Harmony.png"
-                                    alt="Harmony Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1107.png" alt="Clara">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="erudition ice">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1013.png"
-                                    alt="Herta Icon">
-                            </div>
-                            <div class="name">
-                                <p>Herta</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Ice.png" alt="Ice Icon">
-                                <img src="assets/path/Erudition.png"
-                                    alt="Erudition Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Cyrene.html" class="char">
+                    <div class="character ice remembrance">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Remembrance.png" alt="Remembrance">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="erudition fire">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1003.png"
-                                    alt="Himeko Icon">
-                            </div>
-                            <div class="name">
-                                <p>Himeko</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Fire.png"
-                                    alt="Fire Icon">
-                                <img src="assets/path/Erudition.png"
-                                    alt="Erudition Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1415.png" alt="Cyrene">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="destruction fire">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1109.png"
-                                    alt="Hook Icon">
-                            </div>
-                            <div class="name">
-                                <p>Hook</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Fire.png"
-                                    alt="Fire Icon">
-                                <img src="assets/path/Destruction.png"
-                                    alt="Destruction Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="DanHeng.html" class="char">
+                    <div class="character wind hunt">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Wind.png" alt="Wind">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Hunt.png" alt="The Hunt">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="erudition quantum">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1314.png"
-                                    alt="Jade Icon">
-                            </div>
-                            <div class="name">
-                                <p>Jade</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Quantum.png"
-                                    alt="Quantum Icon">
-                                <img src="assets/path/Erudition.png"
-                                    alt="Erudition Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1002.png" alt="Dan Heng">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="Jingliu.html">
-                        <div class="destruction ice">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1212.png"
-                                    alt="Jingliu Icon">
-                            </div>
-                            <div class="name">
-                                <p>Jingliu</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Ice.png" alt="Ice Icon">
-                                <img src="assets/path/Destruction.png"
-                                    alt="Destruction Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="DanHengIL.html" class="char">
+                    <div class="character imaginary destruction">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Imaginary.png" alt="Imaginary">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Destruction.png" alt="Destruction">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="nihility lightning">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1005.png"
-                                    alt="Kafka Icon">
-                            </div>
-                            <div class="name">
-                                <p>Kafka</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Thunder.png"
-                                    alt="Lightning Icon">
-                                <img src="assets/path/Nihility.png"
-                                    alt="Nihility Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1213.png" alt="Dan Heng IL">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="nihility physical">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1111.png"
-                                    alt="Luka Icon">
-                            </div>
-                            <div class="name">
-                                <p>Luka</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Physical.png"
-                                    alt="Physical Icon">
-                                <img src="assets/path/Nihility.png"
-                                    alt="Nihility Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="DanHengPT.html" class="char">
+                    <div class="character physical preservation">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Preservation.png" alt="Preservation">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="abundance imaginary">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1203.png"
-                                    alt="Luocha Icon">
-                            </div>
-                            <div class="name">
-                                <p>Luocha</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Imaginary.png"
-                                    alt="Imaginary Icon">
-                                <img src="assets/path/Abundance.png"
-                                    alt="Abundance Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1414.png" alt="Dan Heng PT">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="abundance quantum">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1110.png"
-                                    alt="Lynx Icon">
-                            </div>
-                            <div class="name">
-                                <p>Lynx</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Quantum.png"
-                                    alt="Quantum Icon">
-                                <img src="assets/path/Abundance.png"
-                                    alt="Abundance Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Ratio.html" class="char">
+                    <div class="character imaginary hunt">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Imaginary.png" alt="Imaginary">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Hunt.png" alt="The Hunt">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="preservation ice">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1001.png"
-                                    alt="March 7th Preservation Icon">
-                            </div>
-                            <div class="name">
-                                <p>March 7th (Preservation)</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Ice.png" alt="Ice Icon">
-                                <img src="assets/path/Preservation.png"
-                                    alt="Preservation Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1305.png" alt="Dr. Ratio">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="hunt imaginary">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1224.png"
-                                    alt="March 7th The Hunt Icon">
-                            </div>
-                            <div class="name">
-                                <p>March 7th (The Hunt)</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Imaginary.png"
-                                    alt="Imaginary Icon">
-                                <img src="assets/path/Hunt.png"
-                                    alt="The Hunt Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="EMIYA.html" class="char">
+                    <div class="character quantum hunt">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Quantum.png" alt="Quantum">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Hunt.png" alt="The Hunt">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="destruction ice">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1312.png"
-                                    alt="Misha Icon">
-                            </div>
-                            <div class="name">
-                                <p>Misha</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Ice.png" alt="Ice Icon">
-                                <img src="assets/path/Destruction.png"
-                                    alt="Destruction Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1015.png" alt="EMIYA">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="hunt lightning">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1223.png"
-                                    alt="Moze Icon">
-                            </div>
-                            <div class="name">
-                                <p>Moze</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Thunder.png"
-                                    alt="Lightning Icon">
-                                <img src="assets/path/Hunt.png"
-                                    alt="The Hunt Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="FuXuan.html" class="char">
+                    <div class="character quantum preservation">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Quantum.png" alt="Quantum">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Preservation.png" alt="Preservation">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="destruction imaginary">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1404.png"
-                                    alt="Mydei Icon">
-                            </div>
-                            <div class="name">
-                                <p>Mydei</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Imaginary.png"
-                                    alt="Imaginary Icon">
-                                <img src="assets/path/Destruction.png"
-                                    alt="Destruction Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1208.png" alt="Fu Xuan">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="abundance physical">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1105.png"
-                                    alt="Natasha Icon">
-                            </div>
-                            <div class="name">
-                                <p>Natasha</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Physical.png"
-                                    alt="Physical Icon">
-                                <img src="assets/path/Abundance.png"
-                                    alt="Abundance Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Gallagher.html" class="char">
+                    <div class="character fire abundance">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Fire.png" alt="Fire">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Abundance.png" alt="Abundance">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="Pela.html">
-                        <div class="nihility ice">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1106.png"
-                                    alt="Pela Icon">
-                            </div>
-                            <div class="name">
-                                <p>Pela</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Ice.png" alt="Ice Icon">
-                                <img src="assets/path/Nihility.png"
-                                    alt="Nihility Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1301.png" alt="Gallagher">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="erudition quantum">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1201.png"
-                                    alt="Qingque Icon">
-                            </div>
-                            <div class="name">
-                                <p>Qingque</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Quantum.png"
-                                    alt="Quantum Icon">
-                                <img src="assets/path/Erudition.png"
-                                    alt="Erudition Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Gepard.html" class="char">
+                    <div class="character ice preservation">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Preservation.png" alt="Preservation">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="harmony ice">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1303.png"
-                                    alt="Ruan Mei Icon">
-                            </div>
-                            <div class="name">
-                                <p>Ruan Mei</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Ice.png" alt="Ice Icon">
-                                <img src="assets/path/Harmony.png"
-                                    alt="Harmony Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1104.png" alt="Gepard">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="nihility wind">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1108.png"
-                                    alt="Sampo Icon">
-                            </div>
-                            <div class="name">
-                                <p>Sampo</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Wind.png"
-                                    alt="Wind Icon">
-                                <img src="assets/path/Nihility.png"
-                                    alt="Nihility Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Guinaifen.html" class="char">
+                    <div class="character fire nihility">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Fire.png" alt="Fire">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Nihility.png" alt="Nihility">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="erudition lightning">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1103.png"
-                                    alt="Serval Icon">
-                            </div>
-                            <div class="name">
-                                <p>Serval</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Thunder.png"
-                                    alt="Lightning Icon">
-                                <img src="assets/path/Erudition.png"
-                                    alt="erudition Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1210.png" alt="Guinaifen">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="hunt physical">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1206.png"
-                                    alt="Sushang Icon">
-                            </div>
-                            <div class="name">
-                                <p>Sushang</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Physical.png"
-                                    alt="Physical Icon">
-                                <img src="assets/path/Hunt.png" alt="Hunt Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Hanya.html" class="char">
+                    <div class="character physical harmony">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Harmony.png" alt="Harmony">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="harmony lightning">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1202.png"
-                                    alt="Tingyun Icon">
-                            </div>
-                            <div class="name">
-                                <p>Tingyun</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Thunder.png"
-                                    alt="Lightning Icon">
-                                <img src="assets/path/Harmony.png"
-                                    alt="Harmony Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1215.png" alt="Hanya">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="destruction physical">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/8002.png"
-                                    alt="Stelle Destruction Icon">
-                            </div>
-                            <div class="name">
-                                <p>Stelle (Destruction)</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Physical.png"
-                                    alt="Physical Icon">
-                                <img src="assets/path/Destruction.png"
-                                    alt="Destruction Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Herta.html" class="char">
+                    <div class="character ice erudition">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Erudition.png" alt="Erudition">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="harmony imaginary">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/8006.png"
-                                    alt="Stelle Harmony Icon">
-                            </div>
-                            <div class="name">
-                                <p>Stelle (Harmony)</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Imaginary.png"
-                                    alt="Imaginary Icon">
-                                <img src="assets/path/Harmony.png"
-                                    alt="Harmony Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1013.png" alt="Herta">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="preservation fire">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/8004.png"
-                                    alt="Stelle Preservation Icon">
-                            </div>
-                            <div class="name">
-                                <p>Stelle (Preservation)</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Fire.png"
-                                    alt="Fire Icon">
-                                <img src="assets/path/Preservation.png"
-                                    alt="Preservation Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Himeko.html" class="char">
+                    <div class="character fire erudition">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Fire.png" alt="Fire">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Erudition.png" alt="Erudition">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="remembrance ice">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/8008.png"
-                                    alt="Stelle Remembrance Icon">
-                            </div>
-                            <div class="name">
-                                <p>Stelle (Remembrance)</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Ice.png" alt="Ice Icon">
-                                <img src="assets/path/Remembrance.png"
-                                    alt="Remembrance Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1003.png" alt="Himeko">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="nihility imaginary">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1004.png"
-                                    alt="Welt Icon">
-                            </div>
-                            <div class="name">
-                                <p>Welt</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Imaginary.png"
-                                    alt="Imaginary Icon">
-                                <img src="assets/path/Nihility.png"
-                                    alt="Nihility Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Hook.html" class="char">
+                    <div class="character fire destruction">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Fire.png" alt="Fire">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Destruction.png" alt="Destruction">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="destruction quantum">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1214.png"
-                                    alt="Xueyi Icon">
-                            </div>
-                            <div class="name">
-                                <p>Xueyi</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Quantum.png"
-                                    alt="Quantum Icon">
-                                <img src="assets/path/Destruction.png"
-                                    alt="Destruction Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1109.png" alt="Hook">
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="hunt ice">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1209.png"
-                                    alt="Yanqing Icon">
-                            </div>
-                            <div class="name">
-                                <p>Yanqing</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Ice.png" alt="Ice Icon">
-                                <img src="assets/path/Hunt.png"
-                                    alt="The Hunt Icon">
-                            </div>
+                    </div>
+                </a>
+                <a href="Hysilens.html" class="char">
+                    <div class="character physical nihility">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Nihility.png" alt="Nihility">
+                            </span>
                         </div>
-                    </a>
-                </div>
-                <div class="char">
-                    <a href="#">
-                        <div class="harmony imaginary">
-                            <div class="avatar">
-                                <img src="assets/characters/avatar/1207.png"
-                                    alt="Yukong Icon">
-                            </div>
-                            <div class="name">
-                                <p>Yukong</p>
-                            </div>
-                            <div class="information">
-                                <img src="assets/elements/Imaginary.png"
-                                    alt="Imaginary Icon">
-                                <img src="assets/path/Harmony.png"
-                                    alt="Harmony Icon">
-                            </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1410.png" alt="Hysilens">
                         </div>
-                    </a>
-                </div>
+                    </div>
+                </a>
+                <a href="Jade.html" class="char">
+                    <div class="character quantum erudition">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Quantum.png" alt="Quantum">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Erudition.png" alt="Erudition">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1314.png" alt="Jade">
+                        </div>
+                    </div>
+                </a>
+                <a href="Jingliu.html" class="char">
+                    <div class="character ice destruction">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Destruction.png" alt="Destruction">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1212.png" alt="Jingliu">
+                        </div>
+                    </div>
+                </a>
+                <a href="Kafka.html" class="char">
+                    <div class="character lightning nihility">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Thunder.png" alt="Lightning">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Nihility.png" alt="Nihility">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1005.png" alt="Kafka">
+                        </div>
+                    </div>
+                </a>
+                <a href="Luka.html" class="char">
+                    <div class="character physical nihility">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Nihility.png" alt="Nihility">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1111.png" alt="Luka">
+                        </div>
+                    </div>
+                </a>
+                <a href="Luocha.html" class="char">
+                    <div class="character imaginary abundance">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Imaginary.png" alt="Imaginary">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Abundance.png" alt="Abundance">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1203.png" alt="Luocha">
+                        </div>
+                    </div>
+                </a>
+                <a href="Lynx.html" class="char">
+                    <div class="character quantum abundance">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Quantum.png" alt="Quantum">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Abundance.png" alt="Abundance">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1110.png" alt="Lynx">
+                        </div>
+                    </div>
+                </a>
+                <a href="MarchPres.html" class="char">
+                    <div class="character ice preservation">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Preservation.png" alt="Preservation">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1001.png" alt="March Preservation">
+                        </div>
+                    </div>
+                </a>
+                <a href="MarchHunt.html" class="char">
+                    <div class="character imaginary hunt">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Imaginary.png" alt="Imaginary">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Hunt.png" alt="The Hunt">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1224.png" alt="March Hunt">
+                        </div>
+                    </div>
+                </a>
+                <a href="Misha.html" class="char">
+                    <div class="character ice destruction">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Destruction.png" alt="Destruction">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1312.png" alt="Misha">
+                        </div>
+                    </div>
+                </a>
+                <a href="Moze.html" class="char">
+                    <div class="character lightning hunt">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Thunder.png" alt="Lightning">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Hunt.png" alt="The Hunt">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1223.png" alt="Moze">
+                        </div>
+                    </div>
+                </a>
+                <a href="Mydei.html" class="char">
+                    <div class="character imaginary destruction">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Imaginary.png" alt="Imaginary">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Destruction.png" alt="Destruction">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1404.png" alt="Mydei">
+                        </div>
+                    </div>
+                </a>
+                <a href="Natasha.html" class="char">
+                    <div class="character ">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Abundance.png" alt="Abundance">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1105.png" alt="Natasha">
+                        </div>
+                    </div>
+                </a>
+                <a href="Pela.html" class="char">
+                    <div class="character ice nihility">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Nihility.png" alt="Nihility">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1106.png" alt="Pela">
+                        </div>
+                    </div>
+                </a>
+                <a href="Qingque.html" class="char">
+                    <div class="character quantum erudition">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Quantum.png" alt="Quantum">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Erudition.png" alt="Erudition">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1201.png" alt="Qingque">
+                        </div>
+                    </div>
+                </a>
+                <a href="RuanMei.html" class="char">
+                    <div class="character ice harmony">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Harmony.png" alt="Harmony">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1303.png" alt="Ruan Mei">
+                        </div>
+                    </div>
+                </a>
+                <a href="Sampo.html" class="char">
+                    <div class="character wind nihility">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Wind.png" alt="Wind">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Nihility.png" alt="Nihility">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1108.png" alt="Sampo">
+                        </div>
+                    </div>
+                </a>
+                <a href="Serval.html" class="char">
+                    <div class="character lightning erudition">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Thunder.png" alt="Lightning">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Erudition.png" alt="Erudition">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1103.png" alt="Serval">
+                        </div>
+                    </div>
+                </a>
+                <a href="Sushang.html" class="char">
+                    <div class="character physical hunt">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Hunt.png" alt="The Hunt">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1206.png" alt="Sushang">
+                        </div>
+                    </div>
+                </a>
+                <a href="Tingyun.html" class="char">
+                    <div class="character lightning harmony">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Erudition.png" alt="Erudition">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1202.png" alt="Tingyun">
+                        </div>
+                    </div>
+                </a>
+                <a href="StelleDes.html" class="char">
+                    <div class="character physical destruction">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Physical.png" alt="Physical">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Destruction.png" alt="Destruction">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/8002.png" alt="Stelle Destruction">
+                        </div>
+                    </div>
+                </a>
+                <a href="StelleHmy.html" class="char">
+                    <div class="character imaginary harmony">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Imaginary.png" alt="Imaginary">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Harmony.png" alt="Harmony">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/8006.png" alt="Stelle Harmony">
+                        </div>
+                    </div>
+                </a>
+                <a href="StellePres.html" class="char">
+                    <div class="character fire preservation">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Fire.png" alt="Fire">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Preservation.png" alt="Preservation">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/8004.png" alt="Stelle Preservation">
+                        </div>
+                    </div>
+                </a>
+                <a href="StelleRmb.html" class="char">
+                    <div class="character ice remembrance">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Remembrance.png" alt="Remembrance">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/8008.png" alt="Stelle Remembrance">
+                        </div>
+                    </div>
+                </a>
+                <a href="Welt.html" class="char">
+                    <div class="character imaginary nihility">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Imaginary.png" alt="Imaginary">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Nihility.png" alt="Nihility">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1004.png" alt="Welt">
+                        </div>
+                    </div>
+                </a>
+                <a href="Xueyi.html" class="char">
+                    <div class="character quantum destruction">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Quantum.png" alt="Quantum">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Destruction.png" alt="Destruction">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1214.png" alt="Xueyi">
+                        </div>
+                    </div>
+                </a>
+                <a href="Yanqing.html" class="char">
+                    <div class="character ice hunt">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Ice.png" alt="Ice">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Hunt.png" alt="The Hunt">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1209.png" alt="Yanqing">
+                        </div>
+                    </div>
+                </a>
+                <a href="Yukong.html" class="char">
+                    <div class="character imaginary harmony">
+                        <div class=core-info>
+                            <span>
+                                <img src="/assets/elements/Imaginary.png" alt="Imaginary">
+                            </span>
+                            <span>
+                                <img src="/assets/path/Harmony.png" alt="Harmony">
+                            </span>
+                        </div>
+                        <div class="avatar">
+                            <img src="/assets/characters/avatar/1207.png" alt="Yukong">
+                        </div>
+                    </div>
+                </a>
             </div>
         </main>
     </div>
