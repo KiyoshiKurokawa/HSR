@@ -231,6 +231,14 @@ td img {
     opacity: 1;
 }
 
+#unbuffed:not(.unbuffed-active) {
+    display: none;
+}
+
+.buffed-inactive {
+    display: none;
+}
+
 @media (width < 1280px) {
     .full-container {
         flex-direction: column;
@@ -267,4 +275,5 @@ td img {
     .relics-images {
         width: 56px;
     }
+
 }
