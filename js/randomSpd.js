@@ -11,7 +11,7 @@ const relicsPieces = {
     boots: 3
 };
 
-function trocarReliquia() {
+function trocarReliquiaSpd() {
     const pieces = Object.keys(relicsPieces);
     const shuffledPieces = [...pieces].sort(() => Math.random() - 0.5);
     const firstSetPiece = shuffledPieces.slice(0, 2);
@@ -56,6 +56,6 @@ function trocarReliquia() {
     });
 }
 
-setInterval(trocarReliquia, 8000);
+setInterval(trocarReliquiaSpd, 8000);
 
-window.addEventListener('DOMContentLoaded', trocarReliquia);
+trocarReliquiaSpd();
