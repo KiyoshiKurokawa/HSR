@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clara Build</title>
+    <meta name="description" content="My personal project for HSR">
+    <meta name="keywords" content="HSR">
+    <meta name="author" content="Kiyoshi Kurokawa">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/char.css">
+    <link rel="icon" href="assets/bg.png">
+    <script src="js/enhance.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="close">
+                <button>
+                    <a href="index.html">
+                        <img src="assets/QuitIcon.png" alt="Return">
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="full-container">
+                <div class="character-intro">
+                    <div class="basic-info">
+                        <div class="splash-art five-star">
+                            <img src="assets/characters/splash/1107.png" alt="Clara"
+                                style="object-position: 40% 35%;" class="char-avatar">
+                            <div class="full-info">
+                                <div class="char-name">
+                                    <p>Clara</p>
+                                </div>
+                                <div>
+                                    <span class="char-element">
+                                        <img src="assets/elements/Physical.png" alt="Physical">
+                                    </span>
+                                    <span class="char-path">
+                                        <img src="assets/path/Destruction.png" alt="Destruction">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="update-section">
+                        <span>Último Update: </span> <span id="update-date">28/01/26</span>
+                    </div>
+                    <div id="char-buff" class="enhanced-enabled unactive-buff">
+                        <button onclick="enhanceStatus()">
+                            <span>
+                                Buffs Applied
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="character-build">
+                    <div class="build-container">
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Status Recomendados</h1>
+                                        </div>
+                                        <div class="status-table">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="3">
+                                                        <img src="assets/IconAttack.png" alt="ATK">
+                                                    </td>
+                                                    <td rowspan="3">ATK</td>
+                                                    <td>Something Irrepleceable</td>
+                                                    <td>3.550+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>On the Fall of An Aeon</td>
+                                                    <td>3.118+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>A Secret Vow</td>
+                                                    <td>3.002+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconCriticalChance.png"
+                                                            alt="CRIT Rate">
+                                                    </td>
+                                                    <td>CRIT Rate</td>
+                                                    <td></td>
+                                                    <td>63%~68%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconCriticalDamage.png"
+                                                            alt="CRIT DMG">
+                                                    </td>
+                                                    <td>CRIT DMG</td>
+                                                    <td></td>
+                                                    <td>150%~170%+</td>
+                                                </tr>
+                                                                                                <tr>
+                                                    <td>
+                                                        <img src="/HSR-Builds/assets/IconSpeed.png" alt="Speed">
+                                                    </td>
+                                                    <td>SPD</td>
+                                                    <td></td>
+                                                    <td>95-</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Light Cones</h1>
+                                        </div>
+                                        <div class="lightcones-section">
+                                            <div class="lightcones">
+                                                <span class="lc-impo">S1</span>
+                                                <img src="assets/lightcones/destruction/23002.png"
+                                                    alt="LC Standard Clara">
+                                                <span class="lc-name">Something Irrepleceable</span>
+                                            </div>
+                                            <div class="lightcones">
+                                                <span class="lc-impo">S5</span>
+                                                <img src="assets/lightcones/destruction/24000.png"
+                                                    alt="LC DU Destruction">
+                                                <span class="lc-name">On the Fall of An Aeon</span>
+                                            </div>
+                                            <div class="lightcones">
+                                                <span class="lc-impo">S5</span>
+                                                <img src="assets/lightcones/destruction/21012.png"
+                                                    alt="LC Gacha Arlan">
+                                                <span class="lc-name">A Secret Vow</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Relíquias</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Poet of Mourning Collapse</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/124_0.png"
+                                                        alt="Capacete">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/124_1.png"
+                                                        alt="Luva">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/124_2.png"
+                                                        alt="Peito">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/124_3.png"
+                                                        alt="Bota">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>HP</p>
+                                                </div>
+                                                <div>
+                                                    <p>ATK</p>
+                                                </div>
+                                                <div>
+                                                    <p>CRIT</p>
+                                                </div>
+                                                <div>
+                                                    <p>ATK</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Ornamentos</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Duran, Dynasty of Running Wolves</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/315_0.png"
+                                                        alt="Esfera">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/315_1.png"
+                                                        alt="Corda">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>PHY<br>DMG</p>
+                                                </div>
+                                                <div>
+                                                    <p>ATK</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer>
+    </footer>
+    </div>
+</body>
+
+</html>
