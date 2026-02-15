@@ -1,7 +1,8 @@
 const relicsSets = {
     "Messenger Traversing Hackerspace": 114,
     "Warrior Goddess of Sun and Thunder": 125,
-    "Sacerdos' Relived Ordeal": 121
+    "Sacerdos' Relived Ordeal": 121,
+    "Diviner of Distant Reach": 130
 };
 
 const relicsPieces = {
