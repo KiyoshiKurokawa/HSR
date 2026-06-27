@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/mainStyle.css">
     <link rel="stylesheet" href="css/char.css">
     <link rel="icon" href="assets/bg.png">
+    <script src="js/enhance.js" defer></script>
 </head>
 
 <body>
@@ -25,9 +26,332 @@
             </div>
         </header>
         <main>
-            <section>
-                <h1 class="maint">EM MANUTENÇÃO</h1>
-            </section>
+            <div class="full-container">
+                <div class="character-intro">
+                    <div class="basic-info">
+                        <div class="splash-art five-star">
+                            <img src="assets/characters/splash/1212.png" alt="Jingliu" style="object-position: 50% 20%;"
+                                class="char-avatar">
+                            <div class="full-info">
+                                <div class="char-name">
+                                    <p>Jingliu</p>
+                                </div>
+                                <div>
+                                    <span class="char-element">
+                                        <img src="assets/elements/Ice.png" alt="Ice">
+                                    </span>
+                                    <span class="char-path">
+                                        <img src="assets/path/Destruction.png" alt="Destruction">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="update-section">
+                        <span>Último Update: </span> <span id="update-date">27/06/26</span>
+                    </div>
+                    <div id="char-buff" class="enhanced-enabled">
+                        <button onclick="enhanceStatus()">
+                            <span>
+                                Buffs Applied
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="character-build">
+                    <div id="buffed" class="build-container">
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Status Recomendados</h1>
+                                        </div>
+                                        <div class="status-table">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconMaxHP.png" alt="HP">
+                                                    </td>
+                                                    <td>HP</td>
+                                                    <td></td>
+                                                    <td>5.000+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconCriticalChance.png" alt="CRIT Rate">
+                                                    </td>
+                                                    <td>CRIT Rate</td>
+                                                    <td></td>
+                                                    <td>50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconCriticalDamage.png" alt="CRIT DMG">
+                                                    </td>
+                                                    <td>CRIT DMG</td>
+                                                    <td></td>
+                                                    <td>120%+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconSpeed.png" alt="Speed">
+                                                    </td>
+                                                    <td>SPD</td>
+                                                    <td></td>
+                                                    <td>135+</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Light Cones</h1>
+                                        </div>
+                                        <div class="lightcones-section">
+                                            <div class="lightcones">
+                                                <span class="lc-impo">S5</span>
+                                                <img src="assets/lightcones/destruction/22003.png"
+                                                    alt="LC Evento Rappa">
+                                                <span class="lc-name">Ninja Record: Sound Hunt</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Relíquias</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Scholar Lost in Erudition</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/122_0.png"
+                                                        alt="Capacete">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/122_1.png" alt="Luva">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/122_2.png"
+                                                        alt="Peito">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/122_3.png" alt="Bota">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>HP</p>
+                                                </div>
+                                                <div>
+                                                    <p>ATK</p>
+                                                </div>
+                                                <div>
+                                                    <p>CRIT</p>
+                                                </div>
+                                                <div>
+                                                    <p>SPD</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Ornamentos</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Bone Collection's Serene Demesne</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/319_0.png"
+                                                        alt="Esfera">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/319_1.png"
+                                                        alt="Corda">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>ICE<br>DMG</p>
+                                                </div>
+                                                <div>
+                                                    <p>HP</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="unbuffed" class="build-container">
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Status Recomendados</h1>
+                                        </div>
+                                        <div class="status-table">
+                                            <table>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        <img src="assets/IconAttack.png" alt="ATK">
+                                                    </td>
+                                                    <td rowspan="2">ATK</td>
+                                                    <td>On the Fall of An Aeon</td>
+                                                    <td>2.083+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Something Irrepleaceable</td>
+                                                    <td>2.461+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconCriticalChance.png" alt="CRIT Rate">
+                                                    </td>
+                                                    <td>CRIT Rate</td>
+                                                    <td></td>
+                                                    <td>40-50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconCriticalDamage.png" alt="CRIT DMG">
+                                                    </td>
+                                                    <td>CRIT DMG</td>
+                                                    <td></td>
+                                                    <td>130%-140%+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconSpeed.png" alt="Speed">
+                                                    </td>
+                                                    <td>SPD</td>
+                                                    <td></td>
+                                                    <td>135+</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Light Cones</h1>
+                                        </div>
+                                        <div class="lightcones-section">
+                                            <div class="lightcones">
+                                                <span class="lc-impo">S5</span>
+                                                <img src="assets/lightcones/destruction/24000.png"
+                                                    alt="LC DU Destruction">
+                                                <span class="lc-name">On the Fall of An Aeon</span>
+                                            </div>
+                                            <div class="lightcones">
+                                                <span class="lc-impo">S1</span>
+                                                <img src="assets/lightcones/destruction/23002.png"
+                                                    alt="LC Standard Clara">
+                                                <span class="lc-name">Something Irrepleceable</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Relíquias</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Scholar Lost in Erudition</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/122_0.png"
+                                                        alt="Capacete">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/122_1.png" alt="Luva">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/122_2.png"
+                                                        alt="Peito">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/122_3.png" alt="Bota">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>HP</p>
+                                                </div>
+                                                <div>
+                                                    <p>ATK</p>
+                                                </div>
+                                                <div>
+                                                    <p>CRIT</p>
+                                                </div>
+                                                <div>
+                                                    <p>SPD</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Ornamentos</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Rutilant Arena</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/309_0.png"
+                                                        alt="Esfera">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/309_1.png"
+                                                        alt="Corda">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>ICE<br>DMG</p>
+                                                </div>
+                                                <div>
+                                                    <p>ATK</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
     </main>
     <footer>
     </footer>
