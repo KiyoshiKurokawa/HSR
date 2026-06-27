@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fu Xuan Build</title>
+    <meta name="description" content="My personal project for HSR">
+    <meta name="keywords" content="HSR">
+    <meta name="author" content="Kiyoshi Kurokawa">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/char.css">
+    <link rel="icon" href="assets/bg.png">
+    <script src="js/enhance.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="close">
+                <button>
+                    <a href="index.html">
+                        <img src="assets/QuitIcon.png" alt="Return">
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="full-container">
+                <div class="character-intro">
+                    <div class="basic-info">
+                        <div class="splash-art five-star">
+                            <img src="assets/characters/splash/1208.png" alt="Fu Xuan" style="object-position: 46% 35%;"
+                                class="char-avatar">
+                            <div class="full-info">
+                                <div class="char-name">
+                                    <p>Fu Xuan</p>
+                                </div>
+                                <div>
+                                    <span class="char-element">
+                                        <img src="assets/elements/Quantum.png" alt="Quantum">
+                                    </span>
+                                    <span class="char-path">
+                                        <img src="assets/path/Preservation.png" alt="Preservation">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="update-section">
+                        <span>Último Update: </span> <span id="update-date">27/06/26</span>
+                    </div>
+                    <div id="char-buff" class="enhanced-enabled unactive-buff">
+                        <button onclick="enhanceStatus()">
+                            <span>
+                                Buffs Applied
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="character-build">
+                    <div class="build-container">
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Status Recomendados</h1>
+                                        </div>
+                                        <div class="status-table">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconMaxHP.png" alt="HP">
+                                                    </td>
+                                                    <td>HP</td>
+                                                    <td></td>
+                                                    <td>7.000+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconDefence.png" alt="DEF">
+                                                    </td>
+                                                    <td>DEF</td>
+                                                    <td></td>
+                                                    <td>1.700+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconSpeed.png" alt="Speed">
+                                                    </td>
+                                                    <td>SPD</td>
+                                                    <td></td>
+                                                    <td>135+</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Light Cones</h1>
+                                        </div>
+                                        <div class="lightcones-section">
+                                            <div class="lightcones">
+                                                <span class="lc-impo">S5</span>
+                                                <img src="assets/lightcones/preservation/24002.png"
+                                                    alt="LC DU Preservation">
+                                                <span class="lc-name">Texture of Memories</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Relíquias</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Warrior Goddess of Sun and Thunder</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/125_0.png"
+                                                        alt="Capacete">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/125_1.png" alt="Luva">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/125_2.png"
+                                                        alt="Peito">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/125_3.png" alt="Bota">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>HP</p>
+                                                </div>
+                                                <div>
+                                                    <p>ATK</p>
+                                                </div>
+                                                <div>
+                                                    <p>HP</p>
+                                                </div>
+                                                <div>
+                                                    <p>SPD</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Ornamentos</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Lushaka, the Sunken Seas</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/317_0.png"
+                                                        alt="Esfera">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/317_1.png"
+                                                        alt="Corda">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>HP</p>
+                                                </div>
+                                                <div>
+                                                    <p>ERR</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    <footer>
+    </footer>
+    </div>
+</body>
+
+</html>

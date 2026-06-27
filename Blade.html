@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blade Build</title>
+    <meta name="description" content="My personal project for HSR">
+    <meta name="keywords" content="HSR">
+    <meta name="author" content="Kiyoshi Kurokawa">
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/char.css">
+    <link rel="icon" href="assets/bg.png">
+    <script src="js/enhance.js" defer></script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="close">
+                <button>
+                    <a href="index.html">
+                        <img src="assets/QuitIcon.png" alt="Return">
+                    </a>
+                </button>
+            </div>
+        </header>
+        <main>
+            <div class="full-container">
+                <div class="character-intro">
+                    <div class="basic-info">
+                        <div class="splash-art five-star">
+                            <img src="assets/characters/splash/1205.png" alt="Blade" style="object-position: 50% 10%;"
+                                class="char-avatar">
+                            <div class="full-info">
+                                <div class="char-name">
+                                    <p>Blade</p>
+                                </div>
+                                <div>
+                                    <span class="char-element">
+                                        <img src="assets/elements/Wind.png" alt="Wind">
+                                    </span>
+                                    <span class="char-path">
+                                        <img src="assets/path/Destruction.png" alt="Destruction">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="update-section">
+                        <span>Último Update: </span> <span id="update-date">15/06/26</span>
+                    </div>
+                    <div id="char-buff" class="enhanced-enabled">
+                        <button onclick="enhanceStatus()">
+                            <span>
+                                Buffs Applied
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="character-build">
+                    <div class="build-container">
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Status Recomendados</h1>
+                                        </div>
+                                        <div class="status-table">
+                                            <table>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconMaxHP.png" alt="HP">
+                                                    </td>
+                                                    <td>HP</td>
+                                                    <td></td>
+                                                    <td>5.000+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="2">
+                                                        <img src="assets/IconCriticalChance.png" alt="CRIT Rate">
+                                                    </td>
+                                                    <td rowspan="2">CRIT Rate</td>
+                                                    <td>E0/E1</td>
+                                                    <td>84%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>E2+</td>
+                                                    <td>69%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconCriticalDamage.png" alt="CRIT DMG">
+                                                    </td>
+                                                    <td>CRIT DMG</td>
+                                                    <td></td>
+                                                    <td>120%+</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img src="assets/IconSpeed.png" alt="Speed">
+                                                    </td>
+                                                    <td>SPD</td>
+                                                    <td></td>
+                                                    <td>135+</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div>
+                                        <div>
+                                            <h1>Light Cones</h1>
+                                        </div>
+                                        <div class="lightcones-section">
+                                            <div class="lightcones">
+                                                <span class="lc-impo">S5</span>
+                                                <img src="assets/lightcones/destruction/22003.png" alt="LC Evento Rappa">
+                                                <span class="lc-name">Ninja Record: Sound Hunt</span>
+                                            </div>
+                                            <div class="lightcones">
+                                                <span class="lc-impo">S5</span>
+                                                <img src="assets/lightcones/destruction/21012.png" alt="LC Gacha Arlan">
+                                                <span class="lc-name">A Secret Vow</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="full-build">
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Relíquias</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Longevous Disciple</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/113_0.png"
+                                                        alt="Capacete">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/113_1.png" alt="Luva">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/113_2.png"
+                                                        alt="Peito">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/113_3.png" alt="Bota">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>HP</p>
+                                                </div>
+                                                <div>
+                                                    <p>ATK</p>
+                                                </div>
+                                                <div>
+                                                    <p>CRIT</p>
+                                                </div>
+                                                <div>
+                                                    <p>SPD</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-section">
+                                    <div class="char-equips">
+                                        <div>
+                                            <h1>Ornamentos</h1>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h2>Bone Collection's Serene Demesne</h2>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/319_0.png"
+                                                        alt="Esfera">
+                                                </div>
+                                                <div>
+                                                    <img class="relics-images" src="assets/relics/319_1.png"
+                                                        alt="Corda">
+                                                </div>
+                                            </div>
+                                            <div class="relics-container">
+                                                <div>
+                                                    <p>WIND<br>DMG</p>
+                                                </div>
+                                                <div>
+                                                    <p>HP</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>
